@@ -1,0 +1,26 @@
+---
+---
+<div class="container">
+
+  <div class="row-fluid">
+    <div class="span12">
+      <h1>Client Letter Archive</h1>
+
+      <p class="lead">Kopion’s semi-annual client letters are our primary means of communication with our clients.  These letters touch upon recent performance, but their main purpose is to help our clients understand our thought processes as we are managing their portfolios.  These letters are provided below.</p>
+
+      <div id="lettersList">
+        <div class="span8 offset2">
+          <ul>
+            {% for letter in site.data.letters %}
+            <li>
+              <a href="letters/{{ letter.file }}" target="blank">{{ letter.title }}</a>
+
+              <div class="caption">{{ letter.caption }}</div>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div><!--end row -->
+</div>

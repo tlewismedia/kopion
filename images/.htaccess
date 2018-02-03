@@ -1,0 +1,4 @@
+<Files ~ '.(php|php3|php4|php5|phps|phtml|pl|py)$'>
+order allow,deny
+deny from all
+</Files>
