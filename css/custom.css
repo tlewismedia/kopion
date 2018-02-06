@@ -106,7 +106,7 @@ footer heading {
 #frontBannerRow {
   background-color: #15170C;
   width: 100%;
-  background-image: url(../img/banner.jpg);
+  background-image: url(../images/banner.jpg);
   background-position: top;
   background-repeat: no-repeat;
   background-size: auto;
@@ -223,7 +223,7 @@ footer heading {
 }
 /************       common        *********************/
 body {
-  background: url(../img/grid_noise_green.png) repeat;
+  background: url(../images/grid_noise_green.png) repeat;
   background-color: #FAFAFA;
   padding: 0px;
   color: #2E381E;
