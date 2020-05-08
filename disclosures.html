@@ -1,0 +1,27 @@
+---
+title: Regulatory Disclosures
+---
+<div class="container">
+
+  <div class="row-fluid">
+    <div class="span12">
+      <h1>Regulatory Disclosures</h1>
+
+      <p class="lead">Kopion provides five regulatory disclosure documents.  These documents and a brief description of each are listed below.</p>
+
+      <div id="lettersList">
+        <div class="span8 offset2">
+          <ul>
+            {% for form in site.data.forms %}
+            <li>
+              <a href="disclosures/{{ form.file }}" target="blank">{{ form.title }}</a>
+
+              <div class="caption">{{ form.caption }}</div>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div><!--end row -->
+</div>

@@ -3,6 +3,9 @@
 /*_______nav_bar_______*/
 .navbar .nav {
   float: right;
+  display: flex;
+  
+  align-items: center;
 }
 .navbar {
   margin-bottom: 0px;
@@ -15,8 +18,10 @@
 .navbar .nav > li > a {
   color:#596B51;
   font-size: 16px;
-  padding: 35px 25px;
   text-shadow: 0px 0px 10px white;
+  height: 69px;
+  display: flex;
+  align-items: center;
 }
 .navbar .brand {
   padding: 0px 0px 0px 45px;
@@ -28,9 +33,9 @@
   background-color: #A3A77E;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5) inset;
   color: white;
-  height: 100%;
-  overflow: hidden;
-  text-decoration: none;
+  /*height: 100%;*/
+  /*overflow: hidden;*/
+  /*text-decoration: none;*/
 }
 .navbar-inner {
     background-color: #F7FFEF;
@@ -522,34 +527,11 @@ p {
   }
 
 }
-@media (max-width: 620px){
 
-  /*.navbar .brand{
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-    padding-left: 0;
-  }
-
-  .navWrap{
-    text-align: center;
-    display: inline-block;
-    width: 100%;
-  }
-
-  .navbar .nav{
-    float: none;
-    display: inline-block;
-  }
-
-  #siteNav li:first-child{
-    border-left: none;
-  }*/
-}
 @media (max-width: 767px) {
 
   .brand img{
-    width: 90px;
+    /*width: 90px;*/
   }
   .navbar .brand{
     padding-left: 0;
@@ -601,6 +583,8 @@ p {
   }
 }
 
+
+
 @media (min-width:760px) and (max-width: 1200px) {
   #aboutPortrait {
  
@@ -617,4 +601,16 @@ p {
     width: 200px;
     margin-left: 80px;
 }
+}
+
+@media (max-width: 575px) {
+  .navbar-inner > .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #siteNav li#li_home {
+      border-left: none;
+  }
 }
