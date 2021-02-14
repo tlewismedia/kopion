@@ -512,20 +512,16 @@ p {
 #perfDis{margin-top: 55px;}
 #authLink{margin-left: 15px;}
 
+.dataImg {
+  width: 100%;
+  max-width: 900px;
+}
+
 
 @media (max-width: 979px) {
   .nav-collapse .nav {
     width: 100%;
   }
-}
-@media (min-width: 607px) {
-  .dataImg{
-    width: auto;
-    max-width: none;
-    
-    padding: none;
-  }
-
 }
 
 @media (max-width: 767px) {

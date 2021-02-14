@@ -3,4 +3,4 @@ bundle exec jekyll serve
 
 
 after review deploy from kopion_upload with:
-sh upload.sh
+sh upload.sh - no more
